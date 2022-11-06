@@ -1,12 +1,24 @@
+@font-face {
+    font-family: MBF;
+    src: url(/mbf.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: #ccc;
     padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
-    background: radial-gradient(circle farthest-side, #002b77, #1e0342);
+    /* background: radial-gradient(circle farthest-side, #09214a, #0a0116); */
+    background: radial-gradient(circle farthest-side, #09214a, #0a0116),linear-gradient(180deg, #09214a 0%, #292433 51%, #0a0116 75%);
     background-attachment: fixed;
     background-size: cover;
+    background-attachment: scroll;
+    background-size: contain;
     cursor: grab;
+    font-family: MBF !important;
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -61,6 +73,7 @@ body {
 .spacer h1 {
     margin: 50px;
     font-size: 3rem;
+    text-transform: uppercase;
 }
 
 .main-bg {
@@ -93,6 +106,13 @@ body {
     max-width: 90vw;
     height: auto;
 }
+.main-bg a{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 75vh;
+}
 
 #countdown li {
     display: inline-block;
@@ -117,8 +137,7 @@ body {
     }
 }
 
-
-@media only screen and (max-width: 600px ) {
+@media only screen and (max-width: 600px) {
     .spacer h1 {
         margin: 50px;
         font-size: 1.5rem;
@@ -131,5 +150,8 @@ body {
         position: absolute;
         bottom: 0;
     }
-    
+}
+.container {
+    cursor: grab;
+    overflow: auto;
 }
