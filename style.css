@@ -97,9 +97,10 @@ body {
     z-index: 9999;
 }
 .pin {
-    transform: translateY(-50%);
-    width: 90vw;
+    transform: translateY(-40%);
+    width: 95vw;
     text-align: center;
+    opacity: 0;
 }
 .main-bg img {
     width: auto;
@@ -108,10 +109,16 @@ body {
 }
 .main-bg a{
     width: 50px;
-    height: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
     background-color: red;
     position: absolute;
-    top: 75vh;
+    top: 85vh;
+    z-index: 9999;
+    color: white;
+    text-align: center;
+
 }
 
 #countdown li {
